@@ -1,0 +1,67 @@
+<style>
+  .btn--pay {
+    background-color: #494949;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    line-height: 1;
+    padding: .75em 1em;
+    transition: background-color .4s ease;
+    align-self: center;
+  }
+
+  .btn--pay:hover {
+    background-color: #00B800;
+    border-color: #333;
+  }
+
+  .cards {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+  }
+
+  .cards img {
+    border: 1px solid #c5c6ce;
+    border-radius: 5px;
+  }
+
+  .cards--s img {
+    height: 30px;
+  }
+
+  #btnPayFrm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+</style>
+
+<form action="https://fletcherequin.securepayments.cardpointe.com/pay"
+    method="post"
+    id="btnPayFrm">
+  <input name="total"
+      value="0.00"
+      type="hidden">
+  <button type="submit"
+      class="btn btn--pay">Pay Now</button>
+  <div class="cards cards--s">
+    <img src="https://fletcherequin.securepayments.cardpointe.com/admin/hpp/img/cc--visa.png"
+        alt="">
+    <img src="https://fletcherequin.securepayments.cardpointe.com/admin/hpp/img/cc--mastercard.png"
+        alt="">
+    <img src="https://fletcherequin.securepayments.cardpointe.com/admin/hpp/img/cc--discover.png"
+        alt="">
+    <img src="https://fletcherequin.securepayments.cardpointe.com/admin/hpp/img/cc--amex.png"
+        alt="">
+  </div>
+</form>
+
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700,800|Material+Icons"
+    rel="stylesheet"
+    type="text/css"
+    id="customFont" />

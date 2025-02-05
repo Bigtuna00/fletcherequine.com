@@ -1,0 +1,2 @@
+https://fletcherequin.securepayments.cardpointe.com/pay?total=0.00
+https://fletcherequin.securepayments.cardpointe.com/pay
