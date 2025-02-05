@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Fletcher Equine Veterinary Services - Home</title>
+  <meta name="description"
+        content="High quality equine veterinary care servicing the South Bay area." />
+  <meta name="keywords"
+        content="horse, equine, veterinarian, veterinary, horses, riding, horseback, eventing, showing, float, exam, colic, angel, fletcher, dvm, morgan hill, gilroy, san jose, hollister" />
+  <meta http-equiv="Content-Type"
+        content="text/html; charset=utf-8" />
+
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      font-family: Verdana;
+    }
+
+    .header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .header a {
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+
+    .logo {
+      max-height: 100px;
+    }
+
+    .header-section {
+      width: 33%;
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Navigation labels */
+    .nav a {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: black;
+      text-decoration: none;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }
+
+    .title {
+      height: 300px;
+      background-image: url("images/background-home.jpg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-family: Georgia;
+      text-shadow: 0px 0px 3px #000000;
+      text-transform: uppercase;
+    }
+
+    .banner-title {
+      font-size: 60px;
+      font-weight: 100;
+      letter-spacing: 0.05em;
+      margin: 15px auto;
+    }
+
+    .banner-subtitle {
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      margin: 15px auto;
+    }
+
+    .main {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      flex: 1;
+    }
+
+    .main-section {
+      text-align: center;
+      width: 33%;
+      line-height: 1.75;
+    }
+
+    .main-section h2 {
+      font-weight: 300;
+    }
+
+    .main-section div,
+    .main-section a {
+      color: #626262;
+    }
+
+    .instructions {
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      height: 100px;
+      background: #eeeeee;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .footer-section span {
+      font-weight: 300;
+    }
+
+    .social {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .social-button {
+      background: url("/images/social_icons.png") no-repeat;
+      margin: 5px;
+      transition: all 300ms ease;
+      width: 24px;
+      height: 24px;
+    }
+
+    .facebook {
+      background-position: 0 0;
+    }
+
+    .email {
+      background-position: -96px 0;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!--------------------------------------------------------------------------->
+  <!-- Header -->
+  <!--------------------------------------------------------------------------->
+  <div class="header">
+
+    <div class="header-section">
+      <a href="">
+        <img class="logo"
+             src="images/logo.png"
+             alt="Fletcher Equine Veterinary Services" />
+      </a>
+    </div>
+
+    <div class="header-section nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+    </div>
+
+    <div class="header-section"><!-- Just to center the nav buttons --></div>
+
+  </div>
+
+  <!--------------------------------------------------------------------------->
+  <!-- Title -->
+  <!--------------------------------------------------------------------------->
+  <div class="title">
+    <div class="banner-title">FLETCHER EQUINE</div>
+    <div class="banner-subtitle">Veterinary Services</div>
+  </div>
+
+
+  <!--------------------------------------------------------------------------->
+  <!-- Main page content -->
+  <!--------------------------------------------------------------------------->
+  <div class="main">
+
+    <!--------------------------------------------------------------------------->
+    <!-- Contact -->
+    <!--------------------------------------------------------------------------->
+    <div class="main-section">
+      <h2>Contact Us</h2>
+      <div>
+        Angel Fletcher, DVM<br />
+        <a href="tel:4087228364">408-722-8364</a><br />
+        12468 Creekview Ct<br />
+        San Martin, CA 95046<br />
+        <a href="mailto:fletcherequine@gmail.com">fletcherequine@gmail.com</a>
+      </div>
+    </div>
+
+    <!--------------------------------------------------------------------------->
+    <!-- payment -->
+    <!--------------------------------------------------------------------------->
+    <div class="main-section">
+      <h2>Need to Make a Payment?</h2>
+      <div class="instructions">Click below to go to the payment page:</div>
+
+      <!-- This code is copied from CardPointe -->
+      <style>
+        .btn--pay {
+          background-color: #494949;
+          border: 0;
+          border-radius: 8px;
+          color: #fff;
+          cursor: pointer;
+          font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+          font-size: 28px;
+          line-height: 1;
+          padding: .75em 1em;
+          transition: background-color .4s ease;
+          align-self: center;
+        }
+
+        .btn--pay:hover {
+          background-color: #00B800;
+          border-color: #333;
+        }
+
+        .cards {
+          margin-top: 10px;
+          display: flex;
+          flex-direction: row;
+          align-self: center;
+        }
+
+        .cards img {
+          border: 1px solid #c5c6ce;
+          border-radius: 5px;
+        }
+
+        .cards--s img {
+          height: 30px;
+        }
+
+        #btnPayFrm {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+      </style>
+
+      <form action="https://fletcherequin.securepayments.cardpointe.com/pay"
+            method="post"
+            id="btnPayFrm">
+        <input name="total"
+               value="0.00"
+               type="hidden">
+        <button type="submit"
+                class="btn btn--pay">Pay Now</button>
+        <div class="cards cards--s">
+          <img src="https://fletcherequin.securepayments.cardpointe.com/admin/hpp/img/cc--visa.png"
+               alt="">
+          <img src="https://fletcherequin.securepayments.cardpointe.com/admin/hpp/img/cc--mastercard.png"
+               alt="">
+          <img src="https://fletcherequin.securepayments.cardpointe.com/admin/hpp/img/cc--discover.png"
+               alt="">
+          <img src="https://fletcherequin.securepayments.cardpointe.com/admin/hpp/img/cc--amex.png"
+               alt="">
+        </div>
+      </form>
+    </div>
+
+    <!--------------------------------------------------------------------------->
+    <!-- Medication -->
+    <!--------------------------------------------------------------------------->
+    <div class="main-section">
+      <h2>Need to Order Medication?</h2>
+      <a href='https://fletcherequine.vetsfirstchoice.com/'
+         target='_blank'>
+        <img src="images/medication.jpg"
+             alt="Order Medication" />
+      </a>
+    </div>
+  </div>
+
+  <!--------------------------------------------------------------------------->
+  <!-- Footer -->
+  <!--------------------------------------------------------------------------->
+  <div class="footer">
+    <div class="footer-section">
+      <span>We Would Love to Hear From You Soon!</span>
+    </div>
+    <div class="footer-section social">
+      <a class="social-button facebook"
+         href='http://facebook.com/fletcherequine'
+         target='_blank'
+         alt='Facebook'></a>
+      <a class='social-button email'
+         href='mailto:fletcherequine@gmail.com'
+         target='_blank'
+         alt='Mail'></a>
+    </div>
+  </div>
+
+</body>
+
+</html>
