@@ -10,150 +10,12 @@
   <meta http-equiv="Content-Type"
         content="text/html; charset=utf-8" />
 
+  <link rel="stylesheet"
+        href="fevs-style.css">
+
   <style>
-    body {
-      min-height: 100vh;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      font-family: Verdana;
-    }
-
-    .header {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-
-    .header a {
-      padding: 10px 20px;
-      text-decoration: none;
-    }
-
-    .logo {
-      max-height: 100px;
-    }
-
-    .header-section {
-      width: 33%;
-    }
-
-    .nav {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-    }
-
-    /* Navigation labels */
-    .nav a {
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 1;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      color: black;
-      text-decoration: none;
-    }
-
-    .nav a:hover {
-      text-decoration: underline;
-    }
-
     .title {
-      height: 300px;
       background-image: url("images/background-home.jpg");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-family: Georgia;
-      text-shadow: 0px 0px 3px #000000;
-      text-transform: uppercase;
-    }
-
-    .banner-title {
-      font-size: 60px;
-      font-weight: 100;
-      letter-spacing: 0.05em;
-      margin: 15px auto;
-    }
-
-    .banner-subtitle {
-      font-size: 36px;
-      font-weight: 700;
-      letter-spacing: 0.15em;
-      margin: 15px auto;
-    }
-
-    .main {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 30px;
-      flex: 1;
-    }
-
-    .main-section {
-      text-align: center;
-      width: 33%;
-      line-height: 1.75;
-    }
-
-    .main-section h2 {
-      font-weight: 300;
-    }
-
-    .main-section div,
-    .main-section a {
-      color: #626262;
-    }
-
-    .instructions {
-      margin-bottom: 10px;
-    }
-
-    .footer {
-      border-top: 1px solid rgba(0, 0, 0, 0.1);
-      height: 100px;
-      background: #eeeeee;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-around;
-    }
-
-    .footer-section span {
-      font-weight: 300;
-    }
-
-    .social {
-      display: flex;
-      flex-direction: row;
-    }
-
-    .social-button {
-      background: url("/images/social_icons.png") no-repeat;
-      margin: 5px;
-      transition: all 300ms ease;
-      width: 24px;
-      height: 24px;
-    }
-
-    .facebook {
-      background-position: 0 0;
-    }
-
-    .email {
-      background-position: -96px 0;
     }
   </style>
 
@@ -194,14 +56,14 @@
 
 
   <!--------------------------------------------------------------------------->
-  <!-- Main page content -->
+  <!-- Info panel content -->
   <!--------------------------------------------------------------------------->
-  <div class="main">
+  <div class="info-panel">
 
-    <!--------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------->
     <!-- Contact -->
-    <!--------------------------------------------------------------------------->
-    <div class="main-section">
+    <!------------------------------------------------------------------------->
+    <div class="info-panel-section">
       <h2>Contact Us</h2>
       <div>
         Angel Fletcher, DVM<br />
@@ -212,12 +74,12 @@
       </div>
     </div>
 
-    <!--------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------->
     <!-- payment -->
-    <!--------------------------------------------------------------------------->
-    <div class="main-section">
+    <!------------------------------------------------------------------------->
+    <div class="info-panel-section">
       <h2>Need to Make a Payment?</h2>
-      <div class="instructions">Click below to go to the payment page:</div>
+      <div class="payment-instructions">Click below to go to the payment page:</div>
 
       <!-- This code is copied from CardPointe -->
       <style>
@@ -282,12 +144,15 @@
                alt="">
         </div>
       </form>
+
+      <div class="payment-zelle">Zelle® is also accepted</div>
+
     </div>
 
-    <!--------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------->
     <!-- Medication -->
-    <!--------------------------------------------------------------------------->
-    <div class="main-section">
+    <!------------------------------------------------------------------------->
+    <div class="info-panel-section">
       <h2>Need to Order Medication?</h2>
       <a href='https://fletcherequine.vetsfirstchoice.com/'
          target='_blank'>
